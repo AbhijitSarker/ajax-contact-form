@@ -30,8 +30,9 @@ function ajax_contact_form()
 
     $content .= '<style>.ajax_form lable {display:block; padding:8px 0px 4px 0px; } .ajax_form input[type=text],input[type=email] {width:400px; padding: 8px; } .ajax_form textaarea {width:400px; hight:200px; paadding:8px;}</style>';
 
-    $content .= '<div class="ajax_form">';
+    $content .= '<div id="response_div"></div>';
 
+    $content .= '<div class="ajax_form">';
     $content .= '<label for="your_name">Your Name</label>';
     $content .= '<input type="text" name="your_name" id="your_name" placeholder="Your Full Name" >';
 
@@ -45,7 +46,7 @@ function ajax_contact_form()
     $content .= '<textarea name="your_comments" name="your_comments" placeholder="Say Something Nice">';
 
 
-    $content .= '<input type="submit" name="ajax_contact_submit" id="ajax_contact_submit">';
+    $content .= '<input type="submit" name="ajax_contact_submit" id="ajax_contact_submit" value="submit">';
 
     $content .= '</div>';
 
